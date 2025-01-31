@@ -57,7 +57,7 @@ Returns a JSON response with the following structure:
 }
 ```
 ## Backlink
-- Node.js: `<https://hng.tech/hire/nodejs-developers>`
+- Node.js: https://hng.tech/hire/nodejs-developers
 
 ## License
 This project is licensed under the MIT License.
