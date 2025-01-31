@@ -44,10 +44,10 @@ npm start
 ```
 ### Open your browser or Postman and visit:
 ```sh
-`<http://localhost:3000/>`
+http://localhost:3000/
 ```
 ## API Endpoint
-**GET** `<https://hng12-stage-0-backend.onrender.com/>`
+**GET** https://hng12-stage-0-backend.onrender.com/
 Returns a JSON response with the following structure:
 ```json
 {
