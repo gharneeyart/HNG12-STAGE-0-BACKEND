@@ -13,13 +13,22 @@ app.use(express.json());
 
 // API Endpoint
 app.get('/', (req, res) => {
-  const response = {
-    email: process.env.EMAIL || 'your-email@example.com',
-    current_datetime: new Date().toISOString(), // ISO 8601 formatted UTC time
-    github_url: process.env.GITHUB_URL
-  };
+  try {
+    const response = {
+      email: process.env.EMAIL,
+      current_datetime: new Date().toISOString(), 
+      github_url: process.env.GITHUB_URL 
+    };
 
-  res.status(200).json(response);
+    res.status(200).json(response);
+  } catch (error) {
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+// Handle 404 Not Found
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not Found' });
 });
 
 // Start the server

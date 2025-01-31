@@ -7,23 +7,13 @@ This is a public API developed as part of the HNG12 Backend Track Stage 0 Task. 
 3. GitHub URL of the project's codebase.
 
 ## Technologies Used
---Node.js (JavaScript runtime environment)
---Express.js (Web framework for Node.js)
---CORS (Cross-Origin Resource Sharing)
---dotenv (For environment variable management)
-## Endpoint
-**GET** `<https://hng12-stage-0-backend.onrender.com/>`
+- Node.js (JavaScript runtime environment)
+- Express.js (Web framework for Node.js)
+- CORS (Cross-Origin Resource Sharing)
+- dotenv (For environment variable management)
 
-### Example Response
-```json
-{
-  "email": "your-email@example.com",
-  "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/yourusername/your-repo"
-}
-```
 
-## Installation
+## How To Run Locally
 ### 1. Clone the repository
   ```sh
 git clone https://github.com/gharneeyart/HNG12-STAGE-0-BACKEND.git
@@ -48,3 +38,28 @@ PORT=3000
 ```sh
 node index.js
 ```
+### 6. Start the development server:
+```sh
+npm start
+```
+### Open your browser or Postman and visit:
+```sh
+`<http://localhost:3000/>`
+```
+## API Endpoint
+**GET** `<https://hng12-stage-0-backend.onrender.com/>`
+Returns a JSON response with the following structure:
+```json
+{
+  "email": "your-email@example.com",
+  "current_datetime": "2025-01-30T09:30:00Z",
+  "github_url": "https://github.com/yourusername/your-repo"
+}
+```
+## Backlink
+- Node.js: `<https://hng.tech/hire/nodejs-developers>`
+
+## License
+This project is licensed under the MIT License.
+
+
