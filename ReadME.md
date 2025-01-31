@@ -48,7 +48,7 @@ http://localhost:3000/
 ```
 ## API Endpoint
 **GET** https://hng12-stage-0-backend.onrender.com/
-Returns a JSON response with the following structure:
+**Returns a JSON response with the following structure:**
 ```json
 {
   "email": "your-email@example.com",
